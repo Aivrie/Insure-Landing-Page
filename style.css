@@ -1,0 +1,356 @@
+/* GENERAL STYLING */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url(./font/Karla/Karla-Regular.ttf);
+}
+
+/* BODY */
+body {
+    font-size: 16px;
+    font-family: 'Karla';
+    line-height: 1.7rem;
+}
+
+section {
+    padding: 70px 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    padding: 15px 0px;
+    line-height: 2.5rem;
+}
+
+section p {
+    color: hsl(273, 4%, 51%);
+}
+
+.page-btn button {
+    margin: 30px 0px;
+    border: 2px solid white;
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+    padding: 10px 30px;
+    /* font-size: 14px; */
+    letter-spacing: 1.2px;
+}
+
+.page-wrapper {
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    margin: 20px 0px 10px 0;
+}
+
+/* NAVIGATION & HAMBURGER MENU */
+
+nav {
+    background-color: hsl(270, 9%, 17%);
+    background-image: url(./images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    text-align: center;
+    height: 100vh;
+}
+
+#menu {
+    display: none;
+}
+
+nav ul {
+    padding: 20px 0px;
+}
+
+nav ul li {
+    margin: 40px 0px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 10px 20px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.open-icon, .close-icon {
+    border: 2px solid black;
+    padding: 4px 10px;
+}
+
+#open-icon {
+    display: block;
+}
+
+#close-menu {
+    display: none;
+}
+
+/* PAGE INTRO */
+
+#mobile-img {
+    display: block;
+}
+
+#desktop-img {
+    display: none;
+}
+
+.page-heading {
+    background-image: url(./images/bg-pattern-intro-left-mobile.svg), url(./images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: auto;
+}
+
+.page-heading p {
+    color: white;
+}
+
+.page-heading, .how-we-work {
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+}
+
+/* ABOUT US */
+
+.divider-wrapper {
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.divider {
+    border: 1px solid hsl(0, 0%, 61%);
+}
+
+.about-us-wrapper {
+    padding: 70px 0px;
+}
+
+.features-wrapper {
+    margin-top: 40px;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    margin: 20px 0px;
+}
+
+.features {
+    margin: 50px 0px;
+    padding-right: 30px;
+}
+
+.features img {
+    margin: 10px;
+}
+
+.features .section-title {
+    margin: 10px 0px;
+}
+
+/* How We Work */
+
+.how-we-work {
+    padding: 40px 10px;
+    background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: hsl(0, 0%, 98%);
+    background-image: url(./images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.footer-section {
+    margin: 20px 0px;
+}
+
+.footer-title {
+    margin: 20px 0px;
+    font-size: 1rem;
+    color: hsl(273, 4%, 51%);
+    font-weight: 600;
+}
+
+.social {
+    margin: 20px;
+}
+
+.social-links {
+    margin: 0px 5px;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width:768px) {
+
+    section {
+        padding: 100px 100px;
+    }
+
+    .section-title {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    .section-padding {
+        padding: 0px 100px;
+    }
+    
+
+/* NAVIGATION */
+
+#menu {
+     display: block;
+}
+
+.open-icon {
+    display: none;
+}
+    
+.close-menu {
+    display: none;
+} 
+
+nav {
+    background-color: white;
+    background-image: none;
+    height: auto;
+}
+
+ nav ul {
+    padding: 10px 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 0px 0px 15px;
+}
+
+nav ul li a {
+    color: hsl(270, 9%, 17%);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    border: 2px solid hsl(270, 9%, 17%);
+    padding: 10px 20px;
+}
+
+ header {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .footer-logo, .footer-link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ /* PAGE INTRO */
+
+ .page-wrapper {
+     text-align: left;
+ }
+
+ #mobile-img {
+     display: none;
+ }
+
+ #desktop-img {
+     display: block;
+     width: 40%;
+     position: absolute;
+     z-index: 4;
+ }
+
+ .page-heading {
+     display: flex;
+     justify-content: space-evenly;
+     /* flex-direction: row; */
+     position: relative; 
+     background-image: url(./images/bg-pattern-intro-left-desktop.svg), url(./images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
+    background-size: cover contain;
+    z-index: 1
+ }
+
+ .page-text {
+     flex-basis: 40%;
+ }
+
+ .page-img {
+     flex-basis: 40%;
+ }
+
+ /* ABOUT US */
+
+ .divider-wrapper {
+    padding-left: 0px;
+    width: 100px;
+    margin: 0px;
+}
+
+.features-wrapper {
+    display: flex;
+}
+
+/* HOW WE WORK */
+.how-we-work {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+}
+
+.how-we-work h3 {
+    flex-basis: 50%;
+}
+}
